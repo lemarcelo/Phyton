@@ -1,0 +1,3 @@
+'' = string vazia
+' '= string espaço
+none = null
