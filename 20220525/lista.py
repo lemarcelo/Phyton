@@ -1,0 +1,11 @@
+alunos = ['Eduardo', 'Maiquel', 'Raphael', 'Lorenzo', 'Bernardo']
+#Reverte a ordem(sort)
+alunos.sort(reverse = True)
+alunos_ordenado = sorted(alunos)
+alunos.append('Diuly')
+alunos.append('Manuela')
+print(alunos)
+print(f'\n Quantidade de alunos {len(alunos)}')
+print(f"\n Incidência de alunos Manuela {alunos.count('Manuela')}")
+print(f'\n Quantidade de alunos {alunos}')
+print(f'\n Quantidade de alunos {sorted(alunos)}')
