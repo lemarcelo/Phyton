@@ -8,8 +8,8 @@ dia, mes, ano = map(int, str_data.split('-'))
 data_formatada = datetime.date(ano, mes, dia)
 
 #Calcula a diferença em dias entre a data de nascimento e a data atual
-def calculo_idade(date1):
-    return abs(datetime.datetime.now().date()-date1).days#abs = absolut number
+def calculo_idade(param):
+    return abs(datetime.datetime.now().date()-param).days#abs = absolut number
     
 #Inicializa a execução da aplicação
 def construtor():
