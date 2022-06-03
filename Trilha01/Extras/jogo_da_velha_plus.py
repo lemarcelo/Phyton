@@ -32,7 +32,7 @@ def jogo_da_velha():
             f'{matriz[1]}\n'+
             f'{matriz[2]}')
         exit()
-    #VERIFICAÇÃO SE O 0 GANHOU
+    #VERIFICAÇÃO SE O O GANHOU
     #HORIZONTAL
     elif (matriz[0][0]=='|O|' and matriz[0][1]=='|O|' and matriz[0][2]=='|O|' or \
         matriz[1][0]=='|O|' and matriz[1][1]=='|O|' and matriz[1][2]=='|O|' or \
