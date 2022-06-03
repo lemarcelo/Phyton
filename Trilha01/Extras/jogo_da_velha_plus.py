@@ -53,6 +53,7 @@ def jogo_da_velha():
         exit()
     #VERIFICAÇÃO SE AS JOGADAS TERMINARAM
     else:
+        #Variável de controle para contagem de jogadas
         controle = 0
         for linha in range(0, 3):
             for coluna in range(0, 3):
