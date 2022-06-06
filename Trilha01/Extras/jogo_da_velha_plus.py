@@ -32,7 +32,7 @@ def jogo_da_velha():
             f'{matriz[1]}\n'+
             f'{matriz[2]}')
         exit()
-    #VERIFICAÇÃO SE O 0 GANHOU
+    #VERIFICAÇÃO SE O O GANHOU
     #HORIZONTAL
     elif (matriz[0][0]=='|O|' and matriz[0][1]=='|O|' and matriz[0][2]=='|O|' or \
         matriz[1][0]=='|O|' and matriz[1][1]=='|O|' and matriz[1][2]=='|O|' or \
@@ -88,13 +88,18 @@ for jogadas in range(1,10):
     jogo_da_velha()
     print(40*'-')
     str_posicao = input('Jogador |O| informe a posição LINHA-COLUNA(0-0 ou 1-1)')
-    
-    #try:
-       #str_posicao = int(str_posicao)
-    #except ValueError:
-        ##
-       #raise ValueError('ALGUMA COISA')
-    #print(40*'-')
+
+    """
+       try:
+           #Condição para criar minha exceção
+           if not str_posicao:
+               #Crio minha exceção
+               raise Exception('Você deve informar uma posição')
+       except Exception as e:
+           print(e)
+           print('Valor de entrada errado. Definido o valor 0')
+           str_posicao = 0
+       """
     
     coluna = int(str_posicao[0])
     linha = int(str_posicao[2])
