@@ -1,0 +1,2 @@
+br = break
+hr = horizontal rule
