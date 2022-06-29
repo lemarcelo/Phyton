@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Formulário de entrada</h1>
+
+    <fieldset>
+        
+        <form method="post" action="https://httpbin.org/post">
+            <label for="placa">
+                Placa: <br>
+                <input type="text" name="placa" minlength="8" maxlength="8">
+            </label>
+            <br>
+            <label for="marca">
+                Marca: <br>
+                <input type="text" name="marca">
+            </label>
+            <br>
+            <label for="modelo">
+                Modelo: <br>
+                <input type="text" name="modelo">
+            </label>
+            <br>
+            <label for="cor">
+                Cor: <br>
+                <input type="color" name="cor" >
+            </label>
+            <br>
+            <label for="data-hora-entrada">
+                Data e Hora de Entrada: <br>
+                <input type="datetime-local" name="data-hora-entrada">
+            </label>
+            <br>
+            <br>
+            <input type="submit" value="Gravar">
+        </form>
+    </fieldset>
+</body>
+</html>

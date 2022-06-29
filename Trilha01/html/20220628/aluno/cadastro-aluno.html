@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Formulário de Matrícula</h1>
+
+    <fieldset>
+        
+        <form method="post" action="https://httpbin.org/post">
+            <label for="nome-aluno">
+                Nome do Aluno: <br>
+                <input type="text" name="nome-aluno" >
+            </label>
+            <br>
+            <label for="turma">
+                Turma: <br>
+                <select name="turma">
+                    <option value="t1">Turma Python</option>
+                    <option value="t2">Turma HTML/CSS</option>
+                    <option value="t3">Turma Django</option>
+                </select>
+            </label>
+            <br>
+            <label for="nome-aluno">
+                Nome do Pai: <br>
+                <input type="text" name="nome-pai" >
+            </label>
+            <br>
+            <label for="nome-mae">
+                Nome da Mãe: <br>
+                <input type="text" name="nome-mae" >
+            </label>
+            <br>
+            <br>
+            <input type="submit" value="Gravar">
+        </form>
+    </fieldset>
+</body>
+</html>
