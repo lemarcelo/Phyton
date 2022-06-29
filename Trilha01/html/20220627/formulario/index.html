@@ -9,25 +9,95 @@
 </head>
 
 <body>
-    <h1>Aula</h1>
-    <form action="">
-        <!-- Tag que indica preenchimento de dados -->
+    <h1>Formulário</h1>
+    <form action="https://httpbin.org/post" method="POST" enctype="multipart/form-data"><!-- enctype - usado para que seja possível enviar arquivos -->
+        <!-- fieldset - Tag que indica preenchimento de dados -->
         <fieldset>
             <!-- Conjunto de campos -->
             <legend>Dados Básicos</legend>
 
             <label for="texto_curto">
                 Texto Curto: <br>
-                <input type="text" name="texto_curto" placeholder="Digite Aqui">
+                <input type="text" name="texto_curto" placeholder="Digite Aqui" maxlength="25" required ><!-- Atributo maxlength usado para limitar a quantidade de caractres | required obriga o preenchimento do campo -->
             </label>
             <br>
-            <label for="email">
+            <label for="email" >
                 Email: <br>
-                <input type="email" name="email" id="email" placeholder="seuemail@email.com">
+                <input type="email" name="email" id="email" placeholder="seuemail@email.com" disabled>
+            </label>
+            <br>
+            <label for="idade">
+                Idade: <br>
+                <input type="number" min="0" max="110">
+            </label>
+            <br>
+            <label for="senha">
+                Senha: <br>
+                <input type="password">
+            </label>
+            <br>
+            <label for="data">
+                Data: <br>
+                <input type="date" name="data">
+            </label>
+            <br>
+            <label for="hora">
+                Hora: <br>
+                <input type="time" name="hora">
+            </label>
+            <br>
+            <label for="data-hora">
+                Data e Hora: <br>
+                <input type="datetime-local" name="data-hora">
+            </label>
+            <br>
+            <label for="arquivo">
+                Upload: <br>
+                <input type="file" name="arquivo">
+            </label>
+            <br>
+            <label for="cor">
+                Cor: <br>
+                <input type="color" name="cor">
+            </label>
+            <br>
+            <label for="texto-longo">
+                Texto Longo: <br>
+                <textarea name="texto-longo" rows="10" cols="40">
+
+                </textarea>
+            </label>
+            <br>
+            <label for="volume">
+                Volume: <br>
+                <input type="range" name="volume" min="1" max="50" value="5" >
             </label>
             <br>
             <p>
+                <label>
+                    <input type="radio" name="sexo" value="M" checked>Masculino
+                </label>
+                <label>
+                    <input type="radio" name="sexo" value="F">Feminino
+                </label>
+
+            </p>
+            <label>
+                Selecione uma opção <br>
+                <select name="estado">
+                    <option value="rs" selected>RS</option>
+                    <option value="pr">PR</option>
+                    <option value="sc">SC</option>
+                </select>
+            </label>
+            <br>
+            <label>
+                <input type="checkbox" name="ativado">Ativado
+            </label>
+
+            <p>
                 <button type="submit">Enviar</button>
+                <button type="reset">Limpar</button>
             </p>
 
 
