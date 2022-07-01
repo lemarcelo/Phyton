@@ -1,0 +1,87 @@
+body {
+    background-color: #2b2b2b;
+    color: rgb(212, 212, 212);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    text-align: center;
+    background-image: linear-gradient(to , white, black);
+    color: rgb(43, 43, 43);
+    border: 4px solid #c5cfd3;
+    border-bottom: 7px solid #4871a0;
+    padding: 100px 30px 5px 70px;
+    /*ordem das propriedades: cima, direita, baixo, esquerda (sentido horário)*/
+
+}
+
+nav {
+    background-color: #347aa8;
+    padding: 10px;
+}
+
+a:link{/* Formatação de itens que não foram clicados ainda */
+    background-color: white;
+    color: #000000;
+    padding: 3px;
+    border: solid 2px #0c0c0c;
+    text-decoration: none;
+    font-size: 18px;
+    text-align: center;
+    border-radius: 10px 0px;
+}
+
+
+
+a:visited{/* Formatação de itens que já foram clicados */
+    padding: 3px;
+    text-decoration: none;
+    font-size: 18px;
+    text-align: center;
+    border: solid 2px #0c0c0c;
+    color: #000000;
+    border-radius: 10px 0px;
+}
+
+a:hover{/* Formatação de quando o mouse está em cima do elemento 'a' */
+    background-color: #2b2b2b;    
+    color: white;
+    border: solid 2px white;
+}
+
+h1 {
+    color: rgb(47, 58, 214);
+}
+
+h2 {
+    color: rgb(14, 22, 134);
+
+}
+
+h3 {
+    background-image: linear-gradient(to right, rgb(29, 28, 28), rgba(255, 255, 255, 0));
+}
+
+p {
+    text-align: justify;
+}
+
+section {
+    background-color: #2b4461;
+    padding: 8px;
+    margin: 15px;
+    text-indent: 10px;
+}
+
+footer {
+    text-align: center;
+    background-color: #000000;
+    margin-top: 25px;
+    padding: 3px;
+}
+
+.texto_destaque {
+    background-color: lightcoral;
+    color: darkseagreen;
+    font-weight: bold;
+}
