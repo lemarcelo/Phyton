@@ -1,5 +1,5 @@
 body {
-    background-color: #2b2b2b;
+    background-color: #7a7979;
     color: rgb(212, 212, 212);
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -20,7 +20,8 @@ nav {
     padding: 10px;
 }
 
-a:link{/* Formatação de itens que não foram clicados ainda */
+a:link {
+    /* Formatação de itens que não foram clicados ainda */
     background-color: white;
     color: #000000;
     padding: 3px;
@@ -33,7 +34,8 @@ a:link{/* Formatação de itens que não foram clicados ainda */
 
 
 
-a:visited{/* Formatação de itens que já foram clicados */
+a:visited {
+    /* Formatação de itens que já foram clicados */
     padding: 3px;
     text-decoration: none;
     font-size: 18px;
@@ -43,8 +45,9 @@ a:visited{/* Formatação de itens que já foram clicados */
     border-radius: 10px 0px;
 }
 
-a:hover{/* Formatação de quando o mouse está em cima do elemento 'a' */
-    background-color: #2b2b2b;    
+a:hover {
+    /* Formatação de quando o mouse está em cima do elemento 'a' */
+    background-color: #2b2b2b;
     color: white;
     border: solid 2px white;
 }
@@ -54,7 +57,7 @@ h1 {
 }
 
 h2 {
-    color: rgb(14, 22, 134);
+    color: rgb(14, 22, 134)!important;
 
 }
 
@@ -73,6 +76,30 @@ section {
     text-indent: 10px;
 }
 
+.sombra_caixa {
+    /*<- Site para dar o código pronto https://html-css-js.com/css/generator/box-shadow/*/
+    -webkit-box-shadow: 8px 9px 18px 1px #000000;
+    box-shadow: 8px 9px 18px 1px #000000;
+}
+
+.sombra_texto {
+    text-shadow: 4px 3px 0 #7A7A7A, 6px 3px 0px rgba(0, 0, 0, 0.5);
+    color: #FFFFFF;
+    background: #b8b8b8;
+}
+
+#elemento_unico {
+    font-size: 30px;
+    color: rgb(7, 17, 165);
+    background-color: #946363;
+    cursor: pointer;
+}
+
+.borda_larga {
+    border: 5px solid rgb(4, 122, 219) !important;
+    /*<- o !important coloca uma prioridade para esse atributo, geralmente usado quando temos o mesmo atributo sendo alterados em lugares diferentes*/
+}
+
 footer {
     text-align: center;
     background-color: #000000;
@@ -81,7 +108,8 @@ footer {
 }
 
 .texto_destaque {
-    background-color: lightcoral;
-    color: darkseagreen;
-    font-weight: bold;
+    background-color: rgb(182, 179, 211);
+    color: rgb(16, 10, 53);
+    font-weight: bolder;
+    text-decoration: underline;
 }
