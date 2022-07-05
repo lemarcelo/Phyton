@@ -1,0 +1,27 @@
+@charset "utf-8";
+
+
+body{
+    color: #023373;
+    background-color: #999999;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+#container_geral {
+    width: 960px;
+    background-color: #ffffff;
+    margin: auto; /*Centraliza o container com relação com a caixa de fora*/
+    border-radius: 5px 5px 0px 0px; /*Arredondamento das 4 bordas*/
+    box-shadow: 5px 5px 15px -8px black;
+}
+
+footer{
+    background: linear-gradient(to bottom, #023373, #0a50ac, #023373);    
+    color: #ffffff;
+    text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #d90420;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.445);
+}
