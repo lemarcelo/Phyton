@@ -19,6 +19,7 @@ footer{
     background: linear-gradient(to bottom, #023373, #0a50ac, #023373);    
     color: #ffffff;
     text-align: center;
+    clear: both;
 }
 
 h1, h2, h3, h4, h5, h6 {
