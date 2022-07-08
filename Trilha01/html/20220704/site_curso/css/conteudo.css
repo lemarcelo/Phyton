@@ -32,3 +32,33 @@ section{
     width: 90px;
     margin-top: 10px;
 }
+
+.section_destaque {
+    width: 670px;
+    height: auto;
+    border: 1px solid #023373;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 5px 5px 15px -8px black;
+    
+}
+
+.section_destaque:hover {
+    border: 2px solid #d90420;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 5px 5px 15px -8px #023373;
+    
+}
+
+table {
+    border: 1px solid #023373;
+    box-shadow: 5px 5px 15px -8px #023373;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+table td {
+    width: 180px;
+    border: 1px solid #023373;
+}
