@@ -1,0 +1,52 @@
+body{
+    background-color: #999999;
+}
+
+.container_geral {
+    border: 1px solid #333333;
+    box-shadow: 5px 5px 15px -8px black;
+    display: flex; /*Encaixa os elementos na mesma linha*/
+}
+
+nav {
+    float: left;
+    width: 30%;
+    background-image: linear-gradient(to right, blue, white, black);
+}
+
+nav ul li {
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    text-shadow: 0px 0px 9px black;
+}
+
+main {
+    float: right;
+    width: 70%;
+    background-color: white;
+    padding: 5px;
+}
+
+@media (max-width: 375px) {/*Delimita a largura do CSS aplicado e vai aplicar daqui pra baixo*/
+    .container_geral{
+        display: block;
+    }
+
+    nav {
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    main {
+        float: none;
+        width: 100%;
+        padding: 0px;
+    }
+    
+} 
