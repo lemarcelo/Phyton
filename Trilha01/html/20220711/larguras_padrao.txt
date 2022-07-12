@@ -1,0 +1,5 @@
+> Dispositivos móveis: 0 - 480px
+> Tablets: 481 - 767px
+> Tablets (deitado): 768 - 1024px
+> Desktop: 1025 - 1280px
+> Telas grandes - 1281px...

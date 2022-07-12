@@ -32,7 +32,7 @@ main {
     padding: 5px;
 }
 
-@media (max-width: 375px) {/*Delimita a largura do CSS aplicado e vai aplicar daqui pra baixo*/
+@media (max-width: 375px) {/*Delimita a largura do CSS aplicado e vai ser configurado daqui pra baixo*/
     .container_geral{
         display: block;
     }
