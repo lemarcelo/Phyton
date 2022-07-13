@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 01</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+        <style>
+            .sombreamento {
+                box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.664);
+            }
+        </style>
+</head>
+
+<body>
+    <div class="container-fluid text-center">
+        <h1>Olá mundo Bootstrap :)</h1>
+
+        <hr>
+
+        <h3>Jumbotron</h3>
+
+        <div class="jumbotron jumbotron-fluid bg-dark text-white-50 sombreamento"> <!--Classe sombreamento é personalizada-->
+            <div class="container">
+                <h1 class="display-4">Título do João-Bolão</h1>
+                <p class="lead">Este é um jumbotron modificado que ocupa todo o espaço horizontal de seu elemento pai.
+                </p>
+            </div>
+        </div>
+
+        <hr>
+
+        <h3>Botões padrão</h3>
+        <p>
+            <button class="btn btn-primary">Enviar</button>
+            <button class="btn btn-success btn-lg">Success</button>
+            <button class="btn btn-warning">Warning</button>
+            <button class="btn btn-danger btn-sm">Danger</button>
+        </p>
+
+        <hr>
+
+        <h3>Botões Outline</h3>
+        <p>
+            <button class="btn btn-outline-primary btn-sm">Outline Primary</button>
+            <button class="btn btn-outline-success">Outline Success</button>
+        </p>
+
+        <hr>
+
+        <h3>Gupo de botões</h3>
+        <p>
+        <div class="btn-group">
+            <button class="btn btn-dark">Esquerdo</button>
+            <button class="btn btn-dark">Centro</button>
+            <button class="btn btn-dark">Direito</button>
+        </div>
+        </p>
+
+        <hr>
+
+        <h3>DropDown Button</h3>
+
+        <div class="dorpdown">
+            <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">Botão DropDown
+            </button>
+            <!--Atributos 'data' recebem "variáveis" como atributos da tag-->
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a href="" class="dropdown-item">opção 1</a>
+                <a href="" class="dropdown-item">opção 2</a>
+                <a href="" class="dropdown-item">opção 3</a>
+                <a href="https://google.com.br" class="dropdown-item" target="_blank">Google</a>
+            </div>
+        </div>
+
+        <hr>
+
+        <h3>Cards</h3>
+
+        <div class="card mt-5 bg-info text-white">
+            <!-- MT - Uma classe pronta para setar a margin (margin top) vai de 1 a 5-->
+            <div class="card-header">Título do Card</div>
+            <div class="card-body bg-dark">
+                <p>Texto do body do card</p>
+            </div>
+            <div class="card-footer">Footer do Card</div>
+        </div>
+
+        <hr>
+
+
+
+        <h3>Alertas</h3>
+        <div class="alert alert-success">
+            Este é um alerta de sucesso
+        </div>
+        <div class="alert alert-danger">
+            Cuidado, perigo!
+        </div>
+
+        <hr>
+
+        <h3>Badge</h3>
+        <p class="text-left">
+            <span class="badge badge-primary">3</span> Novas Mensagens
+        </p>
+
+        <hr>
+
+        <h3>Form</h3>
+
+        <form class="text-left form">
+            <div class="form-group">
+                <label for="entrada_nome" >Nome:</label>
+                <input id="entrada_nome" type="text" class="form-control w-100"> <!--w-100 = largura 100% -->
+            </div>
+        </form>
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
