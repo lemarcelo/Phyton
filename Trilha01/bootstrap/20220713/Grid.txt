@@ -1,0 +1,19 @@
+Responsividade no Bootstrap.
+
+Sistema GRID!
+
+> O Bootstrap considera todos os tamanhos de tela com 12 colunas
+
+> Ao colocar um elemento, devemos pensar quantas colunas o elemento vai ocupar
+
+> Pensar na relação entre o elemento e o número de colunas que ele vai ocupar, de acordo com o tamanho da tela
+
+> Em telas menores o elemento pode ocupar mais colunas
+
+> Telas muito pequenas - xs (extreme small) - smartphone
+> Telas pequenas - sm (small) - tablet
+> Telas médias - md (medium) - pc/note
+> Telas grandes - lg (large) - tv
+> Telas muito grandes - xl (extreme large) - telas maiores
+
+> Documentação: https://getbootstrap.com.br/docs/4.1/utilities/display/
