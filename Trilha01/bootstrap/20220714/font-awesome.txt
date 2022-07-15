@@ -1,0 +1,14 @@
+https://fontawesome.com/
+
+> Manage kits
+
+> clicar no profile
+
+> incluir na tag head o código:
+<script src="https://kit.fontawesome.com/4c5a422e1b.js" crossorigin="anonymous"></script>
+
+> localizar o icone
+
+> copiar o código
+
+> colar onde o icone será incluido
