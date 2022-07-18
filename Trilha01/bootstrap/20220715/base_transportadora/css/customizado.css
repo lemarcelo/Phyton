@@ -1,0 +1,38 @@
+body{
+    background: linear-gradient(to bottom, #928a766d, #999999);
+    scroll-padding-top: 150px;
+}
+
+.bg-gradient{
+    background: linear-gradient(-120deg, rgba(100,100,100,1), rgba(0,0,0,1));
+}
+
+.text-gold{
+    color: #DAA520 !important;
+}
+
+.text-shadow{
+    text-shadow: 1px 1px 3px #000000;
+}
+
+.box-shadow{
+    box-shadow: 1px 1px 3px #000000;
+}
+
+.transparente{
+    background: rgba(255, 255, 255, 0.3);
+    transition: background 2s;
+}
+
+#destaque .transparente:hover{
+    background: rgba(233, 233, 233, 0.7);
+}
+
+.border-radius{
+    border-radius: 5px;
+}
+
+.middle-y{
+    top: 50%;
+    transform: translateY(-50%);
+}
