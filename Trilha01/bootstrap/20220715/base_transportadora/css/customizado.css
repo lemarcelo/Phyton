@@ -36,3 +36,29 @@ body{
     top: 50%;
     transform: translateY(-50%);
 }
+
+.titulo-secao{
+    text-align: center;
+    border-right: 38px solid #33333399;    
+    border-bottom: 2px solid #3333337e;   
+    border-radius: 50%; 
+}
+
+footer{
+    background-image: linear-gradient(to left, rgb(100,100,100), rgb(0,0,0));
+    height: 160px;
+    color: #999999;
+    padding: 50px;
+}
+
+@media (max-width: 767px){
+    #destaque .transparente {
+        background-color: #555555;
+    }
+}
+
+@media (min-width: 768px){
+    #destaque {
+        margin-top: -205px;
+    }
+}
