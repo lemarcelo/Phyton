@@ -16,7 +16,7 @@
     <!-- CSS customizado -->
     <link rel="stylesheet" href="../css/principal.css">
 
-    <title>Carteira / Detalhes</title>
+    <title>Lançamento</title>
 </head>
 
 <body>
@@ -65,7 +65,7 @@
 
                             <div
                                 class="col-xs-8 col-sm-8 col-md-10 col-lg-10 ml-auto mt-3 text-center text-sm-right text-md-right text-lg-right">
-                                <h2 class="text-truncate"><i class="fa-solid fa-wallet"></i> Carteira</h2>
+                                <h2 class="text-truncate"><i class="fa-solid fa-dollar"></i> Lançamento</h2>
                             </div>
 
                         </div>
@@ -74,35 +74,51 @@
             </section>
 
             <section class="mt-3">
-                <div class="card">
-                    <div class="card-body">
-                        <div class="row">
-                            <div class="col-12">
-                                <p>
-                                    <b>Nome:</b>
-                                    <br>
-                                    Bradesco
-                                </p>
+                <form action="lancamento_list.html" method="post" class="form">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                                    <p>Tipo:</p>
+                                    <select name="select_tipo" id="select_tipo" class="form-control">
+                                        <option value="option_entrada">Entrada</option>
+                                        <option value="option_saida">Saída</option>
+                                    </select>
+                                </div>
+                                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                                    <p>Carteira:</p>
+                                    <select name="select_carteira" id="select_carteira" class="form-control" required>
+                                        <option value="1">Carteira</option>
+                                        <option value="2">Bradesco</option>
+                                        <option value="3">Nubank</option>
+                                    </select>
+                                </div>
                             </div>
-                            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 mt-3 form-group">
-                                <p>
-                                    <b>Agência:</b>
-                                    <br>
-                                    0352
-                                </p>
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                                    <label for="input_valor">Valor:</label>
+                                    <input type="number" name="input_valor" id="input_valor" class="form-control" placeholder="R$">
+                                </div>
+                                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                                    <label for="data_lancamento">Data:</label>
+                                    <input type="date" name="data_lancamento" id="data_lancamento" class="form-control">
+                                </div>
                             </div>
-
-                            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 mt-3 form-group">
-                                <p>
-                                    <b>Conta:</b>
-                                    <br>
-                                    002356-7
-                                </p>
+                            <div class="row">
+                                <div class="col-12">
+                                    <label for="input_motivo" required>Motivo</label>
+                                    <input type="text" name="input_motivo" id="input_motivo" class="form-control">
+                                </div>
                             </div>
                         </div>
+                        <div class="card-footer text-center">
+                            <button type="submit" class="btn btn-primary"> <i class="fa-solid fa-save"></i>
+                                Gravar</button>
+                        </div>
                     </div>
-                </div>
+                </form>
             </section>
+
         </div>
     </main>
     <footer class="mt-4 bg-light text-center">
