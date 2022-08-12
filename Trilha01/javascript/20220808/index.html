@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+
+<body>
+
+    <script>
+        var nome = 'Bernardo';
+        var time = 'Gremio'
+        var idade = 28
+
+
+        var a = 500;
+        var b = 3;
+
+        var soma = a + b;
+        var subtr = a - b;
+        var multi = a * b;
+        var divisao = a / b;
+        var raiz = Math.sqrt(a);
+        var potencia = Math.pow(b, 2);
+
+
+        alert(`
+            Soma: ${soma}\n 
+            Subtração: ${subtr}\n
+            Multiplicação: ${multi}\n
+            Divisão: ${divisao}\n
+            Raiz: ${raiz}\n
+            Potência: ${potencia}\n
+        `)
+
+        // if (a <= 500){
+        //     alert(`A variável ${a} é menor ou igual a 500`)
+        // }
+        // else{
+        //     alert(`A variável ${a} é maior que 500`)
+        // }
+
+        // if (a === 500){//testa também o tipo de dado (int)
+        //     alert(`A variável ${a} igual a 500`)
+        // }
+        // else{
+        //     alert(`A variável ${a} é diferente de 500`)
+        // }
+
+
+        //identifica true na variavel se a idade for de maior
+        if (idade >= 18){
+            var maiorIdade = true;
+        }
+        else{
+            var maiorIdade = false;            
+        }
+
+        //mesma coisa com operador ternário (atribuição condicional)
+        var maiorIdade = idade >= 18 ? true : false;
+
+        if(maiorIdade){
+            alert(`Idade ${idade} é de maior`)
+        }
+        else{
+            alert(`Idade ${idade} é de menor`)
+        }
+
+
+    </script>
+</body>
+
+</html>
