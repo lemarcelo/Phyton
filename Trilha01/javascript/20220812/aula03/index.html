@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somatorio</title>
+</head>
+
+<body>
+    <h3>Somatório</h3>
+
+    <input type="number" name="valor_a" id="input_a">
+    <br>
+    <br>
+    <input type="number" name="valor_b" id="input_b">
+    <br>
+    <br>
+    <input type="number" name="resultado" id="resultado" disabled>
+    <br>
+    <br>
+
+    <button type="button" onclick="calcular()">Calcular</button>
+
+    <hr>
+    <h3>Copiar Texto</h3>
+    <p><input type="text" name="texto_digitado" id="texto_digitado">
+    </p>
+
+    <p><input type="tel" name="texto_copiado" id="texto_copiado" disabled></p>
+
+    <p id="texto_inserido"></p>
+
+    <button type="button" onclick="copiarTexto()">COPIAR</button>
+    <button type="button" onclick="limpar()">LIMPAR</button>
+    
+
+
+
+    <script src="script.js">
+    </script>
+</body>
+
+</html>

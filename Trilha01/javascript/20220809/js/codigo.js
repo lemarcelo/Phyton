@@ -59,5 +59,5 @@ function mouseFora(){
 }
 
 function clicado(){
-    alert('edu')
+    alert('Bernardo')
 }
