@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--FontAwesome-->
+    <script src="https://kit.fontawesome.com/facbec27fe.js" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    
+    <!-- CSS Editado -->
+    <link rel="stylesheet" href="css/estilo.css">
+
+    <title>jQuery</title>
+</head>
+<body>
+    <p>
+        <button type="button" class="btn btn-dark" onclick="tornarDark();"><i class="fa-solid fa-moon"></i> Dark</button>
+        <button type="button" class="btn btn-light" onclick="tornarLight();"><i class="fa-solid fa-sun"></i> Light</button>
+    </p>
+    <p>
+        <button type="button" class="btn btn-warning" onclick="tornarFade();"> Fade Subtítulo</button>
+    </p> 
+
+
+    <h1>Super título</h1>
+
+    <h2>Subtitulo 01</h2>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est ex in, fugit non accusantium pariatur, commodi repellat omnis sint quaerat dolor distinctio? Obcaecati dolores culpa iure nisi error natus nobis!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima necessitatibus nam nemo dolores perspiciatis. Exercitationem modi corporis recusandae esse cum! Nihil voluptate, veniam repellat temporibus corporis sit possimus!</p>
+
+
+    <h2>Subtitulo 02</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur officia, voluptates aliquid, voluptatum fuga magni aliquam rerum ut nostrum aspernatur velit, tempore laudantium quia id. Impedit perferendis blanditiis corporis</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure dignissimos quidem doloribus, non saepe voluptatum itaque labore commodi sequi perferendis aspernatur odio? Reiciendis inventore eum quaerat, ipsa unde ea repellat!</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum ducimus id dicta ad consequatur cum cumque explicabo quasi, eveniet hic? Assumenda totam explicabo repellat recusandae atque distinctio facilis officiis ducimus.</p>
+    
+    <hr>
+    <div id="div_destino">
+        <h2>Chat:</h2>
+    </div>
+    <hr>
+    <input type="text" class="btn btn-light" id="nome_digitado" placeholder="Digite seu Nome">
+    <input type="text" class="btn btn-light" id="texto_digitado">
+
+    <button type="button" onclick="copiarTexto();" class="btn btn-primary" id="botao">Enviar</button>
+
+
+    <!-- JavaScript (Opcional) -->
+    <script src = "js/jq.js"></script>
+    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</body>
+</html>
