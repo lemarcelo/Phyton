@@ -22,3 +22,21 @@ function copiarTexto(){
     $("h3").css({"color":"#B0C1D9"})
     $("#texto_digitado").val('').select();
 }
+
+function revelarDataAtributos(){
+    var autor = $('#paragrafo-data').data("autor");
+    var ano = $('#paragrafo-data').data("ano");
+
+    alert(`Autor: ${autor} - Ano: ${ano}`)
+}
+
+function percorrerCaixaSelecao(){
+    var caixaSelecao = $(".cb-aluno:checked");
+
+    $.each(caixaSelecao, function(indice, valor){
+        var cb = $(valor)
+        console.log(cb.data('telefone'))
+    })
+}
+
+$('#btn-verificar').on('click', percorrerCaixaSelecao)//o segundo parametro é apenas o nome, não é necessário executar, então não vai o ()
